@@ -22,6 +22,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/quiz-api/questions")
+@CrossOrigin(origins = {"http://localhost:3000", "https://molacodersquiz.netlify.app"})
 public class QuestionController {
 
     @Autowired

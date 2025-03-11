@@ -28,6 +28,7 @@ import java.util.logging.Logger;
 @RestController
 @RequestMapping("/users")
 //@CrossOrigin(origins = "http://localhost:3000") // Allow requests from the frontend
+@CrossOrigin(origins = {"http://localhost:3000", "https://molacodersquiz.netlify.app"}) // Replace with your actual Netlify URL to Allow both local and deployed frontend
 public class AuthenticationController {
 
     @Autowired
